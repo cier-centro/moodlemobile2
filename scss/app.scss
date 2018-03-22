@@ -228,3 +228,7 @@ $ionicons-font-path: "../lib/ionic/release/fonts" !default;
 
 // Include all of Moodle Mobile.
 @import "www/build/mm.bundle.scss";
+
+.bar-content {
+  background-color: #8417cc;
+}
