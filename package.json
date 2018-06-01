@@ -19,7 +19,9 @@
   ],
   "dependencies": {
     "electron-windows-notifications": "^1.1.13",
-    "electron-builder-squirrel-windows": "^19.3.0"
+    "electron-builder-squirrel-windows": "^19.3.0",
+    "cordova-android": "6.1.2",
+    "cordova-ios": "4.3.1"
   },
   "devDependencies": {
     "appium": "^1.6.0",
@@ -116,5 +118,11 @@
     "snap": {
       "confinement": "classic"
     }
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios"
+    ]
   }
 }

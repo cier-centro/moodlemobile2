@@ -5,6 +5,7 @@
     <ion-content mm-state-class>
         <ion-refresher pulling-text="{{ 'mm.core.pulltorefresh' | translate }}" ng-if="timeline.loaded || timelineCourses.loaded || courses.loaded" on-refresh="refreshMyOverview()">
         </ion-refresher>
+        <img ng-src="img/logo.png" class="avatar-full moodle-logo" role="presentation" style="width: 40%;margin-left: 30%;padding: 5px 0;">
         <div class="tabs tabs-striped tabs-free mm-tabs-color">
             <a class="tab-item" ng-class="{'active': tabShown == 'timeline'}" ng-click="switchTab('timeline')">{{ 'mma.myoverview.timeline' | translate }}</a>
             <a class="tab-item" ng-class="{'active': tabShown == 'courses'}" ng-click="switchTab('courses')">{{ 'mm.courses.courses' | translate }}</a>
