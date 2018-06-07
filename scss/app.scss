@@ -232,3 +232,64 @@ $ionicons-font-path: "../lib/ionic/release/fonts" !default;
 .bar-content {
   background-color: #8417cc;
 }
+.gitei-banner {
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+    overflow: hidden;
+
+    .bg-banner {
+        position: absolute;
+        top: 0;
+    }
+    .logo-banner {
+        position: absolute;
+        z-index: 2;
+        height: 70%;
+        top: 15%;
+        left: 5%;
+    }
+    .gradient-banner {
+      background: rgba(0,0,0,1);
+      background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0.35) 60%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(60%, rgba(255,255,255,0.35)));
+      background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0.35) 60%);
+      background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0.35) 60%);
+      background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0.35) 60%);
+      background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0.35) 60%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+        height:100%;
+        width:100%;
+        position: absolute;
+        z-index: 1;
+    }
+    @media (min-width: 570px) {
+        & {
+            height: 20vw;
+        }
+        .bg-banner {
+            height: auto;
+            width: 100%;
+            right: 0;
+        }
+    }
+    @media (max-width: 569px) {
+        & {
+            height: 140px;
+        }
+        .bg-banner {
+            height: 100%;
+            right: -30%;
+        }
+    }
+}
+@media (min-width: 570px) {
+    [hide-until*=courses] .mm-empty-box img {
+      margin-top: 20vw;
+    }
+}
+@media (max-width: 569px) {
+    [hide-until*=courses] .mm-empty-box img {
+      margin-top: 170px;
+    }
+}
