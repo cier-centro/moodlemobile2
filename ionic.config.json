@@ -6,5 +6,10 @@
     "www/build/**/*",
     "www/index.html",
     "!www/lib/**/*"
-  ]
+  ],
+  "integrations": {
+    "cordova": {},
+    "gulp": {}
+  },
+  "type": "ionic1"
 }
