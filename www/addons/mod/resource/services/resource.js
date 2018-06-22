@@ -301,6 +301,8 @@ angular.module('mm.addons.mod_resource')
      * @return {Promise}
      */
     self.openFile = function(contents, moduleId) {
+        console.log("este es contents");
+        console.log(contents);
         if (!contents || !contents.length) {
             return $q.reject();
         }
@@ -312,6 +314,8 @@ angular.module('mm.addons.mod_resource')
             revision,
             timeMod;
 
+            console.log("este es contents[0]");
+            console.log(self.shouldOpenInBrowser(contents[0]));
         if (self.shouldOpenInBrowser(contents[0])) {
             if ($mmApp.isOnline()) {
                 // Open in browser.
@@ -365,6 +369,9 @@ angular.module('mm.addons.mod_resource')
                     });
                 });
             } else {
+                console.log("entró en este");
+                console.log(result);
+                console.log(result.path);
                 return $mmUtil.openFile(result.path);
             }
         });

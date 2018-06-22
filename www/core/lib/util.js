@@ -309,16 +309,23 @@ angular.module('mm.core')
                 // It's a desktop app, send an event so the file is opened. It has to be done with an event
                 // because opening the file from here (renderer process) doesn't focus the opened app.
                 // Use sendSync so we can receive the result.
+                console.log("entró en 1");
                 if (require('electron').ipcRenderer.sendSync('openItem', path)) {
                     deferred.resolve();
                 } else {
                     $mmLang.translateAndRejectDeferred(deferred, 'mm.core.erroropenfilenoapp');
                 }
             } else if (window.plugins) {
+                console.log("entró en 2");
                 var extension = $mmFS.getFileExtension(path),
                     mimetype = $mmFS.getMimeType(extension);
+                console.log("este es extension");
+                console.log(extension);
+                console.log("este es mimetype");
+                console.log(mimetype);
 
                 if (ionic.Platform.isAndroid() && window.plugins.webintent) {
+                    console.log("entró en android");
                     var iParams = {
                         action: "android.intent.action.VIEW",
                         url: path,
@@ -379,6 +386,7 @@ angular.module('mm.core')
                     deferred.resolve();
                 }
             } else {
+                console.log("entró en 3");
                 // Changing _blank for _system may work in cordova 2.4 and onwards.
                 $log.debug('Opening external file using window.open()');
                 window.open(path, '_blank');
