@@ -36,8 +36,6 @@ angular.module('mm.addons.mod_resource')
      * @return {Promise}              Resolved when done.
      */
     self.openFile = function(module, courseId) {
-        console.log("este es module");
-        console.log(module);
         var modal = $mmUtil.showModalLoading();
 
         return $mmaModResource.openFile(module.contents, module.id).then(function() {
