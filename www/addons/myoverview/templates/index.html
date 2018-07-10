@@ -28,6 +28,13 @@
                 <mm-empty-box ng-if="timelineCourses.courses.length == 0" image="addons/myoverview/img/courses.svg" message="{{ 'mma.myoverview.nocourses' | translate }}"></mm-empty-box>
             </mm-loading>
             <mm-loading hide-until="courses.loaded" ng-show="tabShown == 'courses'" class="mm-loading-center">
+            <div class="gitei-banner">
+                <img ng-src="img/banner.jpg" class="bg-banner" role="presentation">
+                <div class="gradient-banner"></div>
+                <a href="#">
+                    <img ng-src="img/vertical-logo.png" class="logo-banner" role="presentation">
+                </a>
+            </div>
                 <div class="row row-no-padding padding-bottom" ng-show="!showFilter">
                     <div class="col">
                         <div class="item-select mm-full-width-centered">
