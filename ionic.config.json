@@ -1,15 +1,10 @@
 {
-  "name": "moodlemobile2",
-  "app_id": "",
-  "watchPatterns": [
-    "www/**/*.html",
-    "www/build/**/*",
-    "www/index.html",
-    "!www/lib/**/*"
-  ],
+  "name": "moodlemobile",
   "integrations": {
-    "gulp": {},
-    "cordova": {}
+    "cordova": {},
+    "gulp": {}
   },
-  "type": "ionic1"
+  "type": "ionic-angular",
+  "watchPatterns": [],
+  "id": "com.moodle.moodlemobile"
 }
