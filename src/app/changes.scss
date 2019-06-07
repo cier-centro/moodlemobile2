@@ -36,3 +36,34 @@ $images-path: "../assets/img";
     }
   }
 }
+
+.content-md {
+  background-color: $header-blue-bg;
+}
+
+ion-header {
+  ion-navbar {
+    .toolbar-content {
+      position: relative;
+      padding: 0 12px 0 95px !important;      
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 50px;
+        top: -13px;
+        left: 10px;
+        background: url("#{$images-path}/title_logo.png") no-repeat center / contain;
+      }
+    }
+  }
+}
+
+.tabs-md .tabbar {
+  background-color: $tabbar-gray-bg;
+}
+
+.tabs-md .tab-button-icon {
+  color: $tabbar-icons-gray-bg;
+}
