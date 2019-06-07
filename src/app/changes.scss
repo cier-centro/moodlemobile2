@@ -1,0 +1,38 @@
+$images-path: "../assets/img";
+
+%lato-light-font {
+  font-family: 'Lato';
+  font-weight: 300;
+}
+
+%lato-regular-font {
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+%lato-semibold-font {
+  font-family: 'Lato';
+  font-weight: 600;
+}
+
+%lato-bold-font {
+  font-family: 'Lato';
+  font-weight: 700;
+}
+
+%lato-black-font {
+  font-family: 'Lato';
+  font-weight: 900;
+}
+
+.item-input {
+  ion-input {
+    background-color: $header-blue-bg;
+
+    .text-input {
+      color: $fields-gray-tx;
+      font-size: 1.7rem;
+      @extend %lato-bold-font;
+    }
+  }
+}
