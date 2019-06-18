@@ -25,6 +25,14 @@ $images-path: "../assets/img";
   font-weight: 900;
 }
 
+ion-app.md {
+  font-family: 'Lato';
+}
+
+html {
+  font-size: 67.5%;
+}
+
 .item-input {
   ion-input {
     background-color: $header-blue-bg;
@@ -45,7 +53,7 @@ ion-header {
   ion-navbar {
     .toolbar-content {
       position: relative;
-      padding: 0 12px 0 95px !important;      
+      padding: 0 12px 0 95px !important;
 
       &:before {
         content: "";
@@ -66,4 +74,29 @@ ion-header {
 
 .tabs-md .tab-button-icon {
   color: $tabbar-icons-gray-bg;
+}
+
+ion-icon + .item-inner ion-label {
+  &, & h2 {
+    color: $fields-gray-tx;
+    @extend %lato-bold-font;
+  }
+}
+
+ion-app.app-root page-core-mainmenu-more .item-block.activaded.item-md {
+  background-color: $active-green-bg;
+}
+
+page-core-user-about {
+  ion-item-divider ion-label {
+    color: $fields-gray-tx;
+    @extend %lato-bold-font;
+  }
+
+  .item-block {
+     h2 {
+       color: $fields-gray-tx;
+       @extend %lato-bold-font;
+     }
+   }
 }

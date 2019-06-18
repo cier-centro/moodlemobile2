@@ -54,4 +54,17 @@ ion-app.app-root page-core-user-profile {
             @include margin(null, null, null, 0.3em);
         }
     }
+
+    //New styles
+    .input-wrapper core-format-text {
+      font-size: 1.8rem;
+      color: $fields-gray-tx;
+      @extend %lato-bold-font;
+    }
+
+     .core-user-profile-handler .input-wrapper h2 {
+       font-size: 1.7rem;
+       color: $fields-gray-tx;
+       @extend %lato-bold-font;
+     }
 }
