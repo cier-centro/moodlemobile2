@@ -35,8 +35,6 @@ html {
 
 .item-input {
   ion-input {
-    background-color: $header-blue-bg;
-
     .text-input {
       color: $fields-gray-tx;
       font-size: 1.7rem;
@@ -68,6 +66,40 @@ ion-header {
   }
 }
 
+ion-alert {
+  .alert-wrapper {
+    border-radius: 20px !important;
+  }
+  .alert-head {
+    background-color: $alert-header-green-bg;
+    color: $white;
+    text-align: center !important;
+    @extend %lato-black-font;
+  }
+  .alert-message {
+    background-color: $active-green-bg;
+    color: $white !important;
+    padding: 24px !important;
+    font-size: 1.8rem !important;
+    @extend %lato-light-font;
+  }
+  .alert-button-group {
+    background-color: $main-blue;
+  }
+  .alert-button {
+    color: $white !important;
+  }
+}
+
+.radio-md {
+  .radio-icon, .radio-checked {
+    border-color: $active-green-bg;
+  }
+  .radio-inner {
+    background-color: $active-green-bg;
+  }
+}
+
 .tabs-md .tabbar {
   background-color: $tabbar-gray-bg;
 }
@@ -83,8 +115,12 @@ ion-icon + .item-inner ion-label {
   }
 }
 
-ion-app.app-root page-core-mainmenu-more .item-block.activaded.item-md {
-  background-color: $active-green-bg;
+.item-md.activated {
+  background-color: $active-green-bg !important;
+
+  &, ion-icon, ion-label p, ion-label h2 {
+    color: $white !important;
+  }
 }
 
 page-core-user-about {
