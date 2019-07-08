@@ -1,7 +1,7 @@
 {
-    "app_id": "com.moodle.moodlemobile",
-    "appname": "Moodle Mobile",
-    "desktopappname": "Moodle Desktop",
+    "app_id": "co.edu.gitei.pta",
+    "appname": "PTA Dev",
+    "desktopappname": "PTA Dev Desktop",
     "versioncode": 3700,
     "versionname": "3.7.0-dev",
     "cache_update_frequency_usually": 420000,
@@ -69,7 +69,7 @@
         }
     },
     "customurlscheme": "moodlemobile",
-    "siteurl": "http://192.168.202.22/moodleoim",
+    "siteurl": "52.35.5.163",
     "sitename": "",
     "multisitesdisplay": "",
     "skipssoconfirmation": false,
