@@ -107,6 +107,7 @@ export class AddonNotificationsSettingsPage implements OnDestroy {
                 });
             }
         }).catch((message) => {
+            message.message = 'Servicio de notificaciones desactivado en plataforma';
             this.domUtils.showErrorModal(message);
         }).finally(() => {
             this.preferencesLoaded = true;

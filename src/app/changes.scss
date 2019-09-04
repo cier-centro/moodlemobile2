@@ -70,12 +70,14 @@ ion-alert {
   .alert-wrapper {
     border-radius: 20px !important;
   }
+
   .alert-head {
     background-color: $alert-header-green-bg;
     color: $white;
     text-align: center !important;
     @extend %lato-black-font;
   }
+
   .alert-message {
     background-color: $active-green-bg;
     color: $white !important;
@@ -83,18 +85,22 @@ ion-alert {
     font-size: 1.8rem !important;
     @extend %lato-light-font;
   }
+
   .alert-button-group {
     background-color: $main-blue;
   }
+
   .alert-button {
     color: $white !important;
   }
 }
 
 .radio-md {
-  .radio-icon, .radio-checked {
+  .radio-checked,
+  .radio-icon {
     border-color: $active-green-bg;
   }
+
   .radio-inner {
     background-color: $active-green-bg;
   }
@@ -109,7 +115,8 @@ ion-alert {
 }
 
 ion-icon + .item-inner ion-label {
-  &, & h2 {
+  &,
+  & h2 {
     color: $fields-gray-tx;
     @extend %lato-bold-font;
   }
@@ -118,7 +125,10 @@ ion-icon + .item-inner ion-label {
 .item-md.activated {
   background-color: $active-green-bg !important;
 
-  &, ion-icon, ion-label p, ion-label h2 {
+  &,
+  ion-icon,
+  ion-label h2,
+  ion-label p {
     color: $white !important;
   }
 }
@@ -130,9 +140,23 @@ page-core-user-about {
   }
 
   .item-block {
-     h2 {
-       color: $fields-gray-tx;
-       @extend %lato-bold-font;
-     }
-   }
+    h2 {
+      color: $fields-gray-tx;
+      @extend %lato-bold-font;
+    }
+  }
+}
+
+ion-app.app-root core-empty-box .core-empty-box {
+  width: 100vw !important;
+}
+@media (min-width: 350px) {
+  ion-app.app-root core-empty-box .core-empty-box {
+    height: 70vh !important;
+  }
+}
+@media (max-width: 349px) {
+  ion-app.app-root core-empty-box .core-empty-box {
+    height: 38vh !important;
+  }
 }

@@ -111,6 +111,7 @@
     "addon.competency.myplans": "Mis planes de aprendizaje",
     "addon.competency.noactivities": "Sin actividades",
     "addon.competency.nocompetencies": "Sin competencias",
+    "addon.competency.nocompetenciesincourse": "Ninguna competencia ha sido enlazada a este curso.",
     "addon.competency.nocrossreferencedcompetencies": "No se han referenciado cruzadamente otras competencias con esta competencia.",
     "addon.competency.noevidence": "Sin evidencia",
     "addon.competency.noplanswerecreated": "No se crearon planes de aprendizaje.",
