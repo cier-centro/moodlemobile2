@@ -150,6 +150,13 @@ page-core-user-about {
 ion-app.app-root core-empty-box .core-empty-box {
   width: 100vw !important;
 }
+
+ion-app.app-root page-core-courses-course-preview .core-course-thumb img {
+  height: 100%;
+  max-width: 1000%;
+  width: auto !important;
+  right: 0;
+}
 @media (min-width: 350px) {
   ion-app.app-root core-empty-box .core-empty-box {
     height: 70vh !important;
