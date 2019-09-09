@@ -1628,7 +1628,7 @@
     "core.settings.cordovaversion": "Versión Cordova",
     "core.settings.currentlanguage": "Idioma actual",
     "core.settings.debugdisplay": "Mostrar mensajes de depuración",
-    "core.settings.debugdisplaydescription": "Si se habilita, errores modales mostrará más datos acerca del error si fuese posible,",
+    "core.settings.debugdisplaydescription": "Si se habilita, errores modales mostrará más datos acerca del error si fuese posible.",
     "core.settings.deletesitefiles": "¿Está seguro de que desea borrar todos los archivos descargados de este sitio?",
     "core.settings.deletesitefilestitle": "Elimina los ficheros del sitio",
     "core.settings.deviceinfo": "Información del dispositivo",
