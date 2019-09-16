@@ -27,7 +27,7 @@
         }
     },
     "customurlscheme": "moodlemobile",
-    "siteurl": "http://rutapta.mineducacion.gov.co/",
+    "siteurl": "",
     "sitename": "",
     "multisitesdisplay": "",
     "skipssoconfirmation": false,
