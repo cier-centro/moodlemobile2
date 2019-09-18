@@ -167,3 +167,16 @@ ion-app.app-root page-core-courses-course-preview .core-course-thumb img {
     height: 38vh !important;
   }
 }
+@media (orientation:landscape) {
+  ion-app.app-root core-empty-box .core-empty-box .core-empty-box-content {
+    padding: 10% 10px;
+  }
+
+  ion-app.app-root page-addon-mod-forum-index core-empty-box .core-empty-box .core-empty-box-content {
+    padding: 20% 10px 10%;
+  }
+
+  ion-app.app-root core-grades-course .core-grades-container {
+    padding-bottom: 40vh;
+  }
+}
